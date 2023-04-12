@@ -745,9 +745,9 @@ footer .social {
   #espacio2.esd-stripe {
     width: 500px !important;
   }
-  #informacion {
+  /*  #informacion {
     width: 100%;
-  }
+  } */
   .img-title {
     /* margin: auto; */
     width: 280px;
@@ -773,7 +773,7 @@ footer .social {
   }
   .info-cuadro {
     /*NUEVO*/
-    /* margin-left: 10px !important; */
+    margin-left: 10px !important;
   }
   .espacio10 {
     margin-bottom: 20px;
