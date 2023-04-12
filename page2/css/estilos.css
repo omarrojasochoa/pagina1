@@ -1,0 +1,794 @@
+/** fuentes **/
+@font-face {
+  font-family: "Gilroy-ExtraBold";
+  src: url("../fuentes/Gilroy-ExtraBold.otf");
+}
+@font-face {
+  font-family: "Gilroy-Light";
+  src: url("../fuentes/Gilroy-Light.otf");
+}
+@font-face {
+  font-family: "Neo_Sans_Bold";
+  src: url("../fuentes/Neo_Sans_Bold.ttf");
+}
+@font-face {
+  font-family: "NeoSansPro-Regular";
+  src: url("../fuentes/NeoSansPro-Regular.ttf");
+}
+@font-face {
+  font-family: "NeoSansStd-Medium";
+  src: url("../fuentes/NeoSansStd-Medium.otf");
+}
+
+body {
+  max-width: 1280px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f5f5f5;
+}
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 9999;
+}
+
+.modal-dialog {
+  max-width: 700px;
+  margin: 1.75rem auto;
+}
+
+.fondoprincipal {
+  overflow-x: hidden;
+  background-color: #0098cb;
+  background-size: cover;
+  background-position-x: 0em;
+  background-repeat: no-repeat;
+  padding: 0;
+  padding-bottom: 0em;
+}
+
+.img-ambos {
+  position: relative;
+  height: auto;
+}
+
+.img-ambos img {
+  height: auto;
+  margin-left: -145px;
+  float: left;
+  min-height: 100vh;
+  max-width: 1280px;
+}
+
+#informacion {
+  height: auto;
+  max-width: 100%;
+}
+
+.hidden {
+  visibility: hidden;
+}
+@media (max-width: 768px) {
+  .imagen-pareja {
+    padding-left: 0 !important;
+  }
+
+  .row {
+    margin-left: 0px;
+  }
+  .container-form {
+    width: auto;
+    margin: auto;
+    /* padding: 0px, 0px, 0px, 0px !important; */
+    margin-left: -15px;
+  }
+  .img-ambos img {
+    min-height: auto;
+    max-width: 100%;
+    margin: auto;
+  }
+  .es-content-body {
+    max-width: 500px;
+  }
+  .img-ambos {
+    width: 510px;
+    justify-content: center;
+  }
+  #espacio2 {
+    max-width: 20%;
+  }
+  #informacion {
+    max-width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    /* scale: calc(1.1); */
+  }
+}
+@media (max-width: 1200px) {
+  .img-ambos {
+    width: 510px;
+    justify-content: center;
+  }
+  /* #informacion {
+    max-width: 40%;
+    margin: auto;
+  } */
+  #espacio1 {
+    max-width: 100%;
+  }
+  #espacio2 {
+    max-width: 100%;
+  }
+  container-form {
+    width: 515px;
+  }
+}
+@media (max-width: 600px) {
+  .img-ambos {
+    width: 510px;
+    justify-content: center;
+  }
+  /* #informacion {
+    max-width: 40%;
+    margin: auto;
+  } */
+  .hidden {
+    margin-top: -50px;
+  }
+  #espacio1 {
+    max-width: 100%;
+  }
+  #espacio2 {
+    max-width: 100%;
+  }
+  container-form {
+    width: 515px;
+  }
+}
+
+.contenedor-imagenes img {
+  max-width: 100%;
+  height: auto;
+}
+.fondoprincipal .espacio7 {
+  /* padding-top: 5em; */
+  min-height: 100vh;
+}
+.container-form {
+  background-color: #00213f90;
+  /* margin-bottom: 2em; */
+  padding-top: 4em;
+  /* padding-bottom: 10em; */
+  max-height: 900px;
+  left: 2em;
+}
+@media (max-width: 1200px) {
+  .container-form {
+    left: 2.5em;
+  }
+}
+@media (max-width: 1000px) {
+  .container-form {
+    left: 0;
+  }
+}
+@media (max-width: 760px) {
+  .programaingles .flecha {
+    width: 50px;
+    left: -104px;
+    position: relative;
+  }
+}
+
+.fondoprincipal .logo {
+  max-width: 275px;
+  padding-bottom: 2.5em;
+}
+.fondoprincipal h3 {
+  color: #11d1e8;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  font-family: "NeoSansStd-Medium";
+  letter-spacing: 2px;
+}
+.fondoprincipal h4 {
+  color: #fff;
+  font-size: 58px;
+  padding: 0;
+  margin: 0;
+  font-family: "Gilroy-ExtraBold";
+  margin-top: -10px;
+}
+.fondoprincipal .cajas {
+  background: transparent;
+  border-radius: 14px;
+  border: 2px solid #fff;
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  color: white;
+  text-align: center;
+}
+.fondoprincipal .referencia {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+}
+.fondoprincipal .boton {
+  background: white;
+  color: #1f62a5;
+  padding: 6px 24px;
+  border-radius: 24px;
+  border: white;
+  font-family: "Gilroy-ExtraBold";
+  font-size: 22px;
+}
+.fondoprincipal .txt1 {
+  background: white;
+  color: #00213f;
+  padding: 3px 20px;
+  border-radius: 8px;
+  z-index: 9999;
+  position: relative;
+  font-family: "NeoSansStd-Medium";
+  font-size: 17px;
+}
+.fondoprincipal .txt2 {
+  background: #11d1e8;
+  color: white;
+  padding: 6px;
+  padding-left: 28px;
+  top: -2px;
+  padding-right: 6px;
+  border-radius: 8px;
+  left: -29px;
+  position: relative;
+  z-index: 0;
+  font-family: "NeoSansStd-Medium";
+  font-size: 12px;
+}
+.fondoprincipal .espacio10 {
+  padding-left: 10px;
+  width: auto;
+}
+.fondoprincipal .espaciomov {
+  padding-top: 0px;
+}
+.fondoprincipal .espaciopc {
+  padding-top: 20px;
+}
+.fondoprincipal .modalidad {
+  background: #11d1e8;
+}
+
+.eligemas {
+  background: white;
+  padding-top: 1em;
+  padding-bottom: 0.4em;
+}
+.eligemas h2 {
+  font-family: "Gilroy-ExtraBold";
+  font-size: 28px;
+  text-align: center;
+}
+.eligemas .titulo1 {
+  color: #1f62a5;
+}
+.eligemas .titulo2 {
+  color: #11d1e8;
+}
+
+.programaingles {
+  background: #0098cb;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.programaingles .caja {
+  background: white;
+  width: 410px;
+  border-radius: 14px;
+  padding-top: 4px;
+  padding-bottom: 0px;
+}
+.programaingles .flecha {
+  width: 50px;
+  left: -54px;
+  position: relative;
+}
+.programaingles .texto1 {
+  color: #fff;
+  font-family: "NeoSansStd-Medium";
+  font-size: 11px;
+  padding-top: -17px;
+  left: 0px;
+  position: relative;
+  line-height: 19px;
+  top: -38px;
+  left: 30px;
+  text-align: left;
+}
+
+footer {
+  /* background: radial-gradient(#2e79a8, #19375b); */
+  background: #19375b;
+  padding-top: 1.4em;
+  padding-bottom: 0.4em;
+}
+footer h5 {
+  font-family: "NeoSansPro-Regular";
+  color: white;
+  font-size: 14px;
+}
+footer .der {
+  text-align: right;
+}
+footer .social {
+  color: white;
+  font-size: 18px;
+  padding-right: 6px;
+}
+
+.thankyou {
+  background: #1f62a5;
+  padding-top: 4em;
+  padding-bottom: 0em;
+  height: 100vh;
+}
+.thankyou .espacio7 {
+  padding-top: 7em;
+}
+.thankyou .logo {
+  max-width: 420px;
+}
+.thankyou h1 {
+  color: #11d8ef;
+  font-size: 36px;
+  padding: 0;
+  margin: 0;
+  font-family: "Neo_Sans_Bold";
+  letter-spacing: 2px;
+  padding-top: 10px;
+}
+.thankyou h2 {
+  color: #fff;
+  font-size: 22px;
+  padding: 0;
+  margin: 0;
+  font-family: "Gilroy-ExtraBold";
+  text-align: center;
+  padding-top: 10px;
+  letter-spacing: 1px;
+}
+.thankyou .cajas {
+  background: transparent;
+  border-radius: 14px;
+  border: 2px solid #fff;
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  color: white;
+  text-align: center;
+}
+
+.pie {
+  background: #1f62a5;
+  padding-top: 6em;
+  padding-bottom: 2em;
+}
+.pie .social {
+  color: white;
+  font-size: 32px;
+  padding-right: 6px;
+  padding-right: 20px;
+}
+
+::placeholder {
+  color: white;
+  font-size: 16px;
+  font-family: "NeoSansPro-Regular";
+  text-align: center;
+  font-weight: 300;
+}
+
+.contain {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  color: white;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: "NeoSansPro-Regular";
+}
+
+/* Hide the browser's default checkbox */
+.contain input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+/* On mouse-over, add a grey background color */
+.contain:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.contain input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.contain input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.contain .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+@media (max-width: 600px) {
+  .modal-dialog {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .fondoprincipal {
+    background: radial-gradient(#2e79a8, #19375b);
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+  /* .fondoprincipal .espacio7 {
+    padding-top: 1em;
+  } */
+  .fondoprincipal .logo {
+    max-width: 300px;
+  }
+  .fondoprincipal h3 {
+    color: #11d1e8;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    font-family: "NeoSansStd-Medium";
+    letter-spacing: 2px;
+  }
+  .fondoprincipal h4 {
+    color: #fff;
+    font-size: 52px;
+    padding: 0;
+    margin: 0;
+    font-family: "Gilroy-ExtraBold";
+    margin-top: -10px;
+  }
+  .fondoprincipal .cajas {
+    background: transparent;
+    border-radius: 14px;
+    border: 2px solid #fff;
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    color: white;
+  }
+  .fondoprincipal .referencia {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  .fondoprincipal .boton {
+    background: white;
+    color: #1f62a5;
+    padding: 6px 24px;
+    border-radius: 24px;
+    border: white;
+    font-family: "Gilroy-ExtraBold";
+    font-size: 22px;
+  }
+  .fondoprincipal .txt1 {
+    background: white;
+    color: #00213f;
+    padding: 2px 10px;
+    border-radius: 8px;
+    z-index: 9999;
+    position: relative;
+    font-family: "NeoSansStd-Medium";
+    font-size: 15px;
+  }
+  .fondoprincipal .txt2 {
+    background: #11d1e8;
+    color: white;
+    padding: 0.36em;
+    padding-left: 28px;
+    top: -1px;
+    padding-right: 5px;
+    border-radius: 8px;
+    left: -30px;
+    position: relative;
+    z-index: 0;
+    font-family: "NeoSansStd-Medium";
+    font-size: 11px;
+  }
+  .fondoprincipal .espacio10 {
+    padding-left: 10px;
+  }
+  .fondoprincipal .espaciom {
+    padding-top: 2em;
+  }
+  .fondoprincipal .espaciomov {
+    padding-top: 20px;
+  }
+  .fondoprincipal .espaciopc {
+    padding-top: 0px;
+  }
+
+  .programaingles {
+    background: #0098cb;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  .programaingles .caja {
+    background: white;
+    width: 410px;
+    border-radius: 14px;
+    padding-top: 4px;
+    padding-bottom: 0px;
+  }
+  .programaingles .flecha {
+    width: 50px;
+    left: -54px;
+    position: relative;
+  }
+  .programaingles .texto1 {
+    color: #fff;
+    font-family: "NeoSansStd-Medium";
+    font-size: 11px;
+    padding-top: -17px;
+    left: 0px;
+    position: relative;
+    line-height: 19px;
+    top: -38px;
+    left: 0px;
+    padding-left: 32px;
+    text-align: left;
+  }
+
+  .eligemas {
+    background: white;
+    padding-top: 1em;
+    padding-bottom: 0.4em;
+  }
+  .eligemas h2 {
+    font-family: "Gilroy-ExtraBold";
+    font-size: 22px;
+    text-align: center;
+  }
+  .eligemas .titulo1 {
+    color: #1f62a5;
+  }
+  .eligemas .titulo2 {
+    color: #11d1e8;
+  }
+
+  footer {
+    /* background: #1f62a5; */
+    background: #19375b;
+    padding-top: 1.4em;
+    padding-bottom: 0.8em;
+  }
+  footer h5 {
+    font-family: "NeoSansPro-Regular";
+    color: white;
+    font-size: 12px;
+    padding-top: 4px;
+  }
+  footer .der {
+    text-align: center;
+  }
+  footer .social {
+    color: white;
+    font-size: 18px;
+    padding-right: 6px;
+  }
+
+  .thankyou {
+    background: #1f62a5;
+    padding-top: 4em;
+    padding-bottom: 0em;
+    height: 100%;
+  }
+  .thankyou .espacio7 {
+    padding-top: 5em;
+  }
+  .thankyou .logo {
+    max-width: 320px;
+  }
+  .thankyou h1 {
+    color: #11d8ef;
+    font-size: 36px;
+    padding: 0;
+    margin: 0;
+    font-family: "Neo_Sans_Bold";
+    letter-spacing: 2px;
+    padding-top: 10px;
+  }
+  .thankyou h2 {
+    color: #fff;
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
+    font-family: "Gilroy-ExtraBold";
+    text-align: center;
+    padding-top: 10px;
+    letter-spacing: 1px;
+  }
+  .thankyou .cajas {
+    background: transparent;
+    border-radius: 14px;
+    border: 2px solid #fff;
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    color: white;
+    text-align: center;
+  }
+
+  .pie {
+    background: #1f62a5;
+    padding-top: 7em;
+    padding-bottom: 1em;
+  }
+  .pie .social {
+    color: white;
+    font-size: 32px;
+    padding-right: 6px;
+    padding-right: 20px;
+  }
+}
+
+.circle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  background-color: #333;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle i {
+  color: white;
+}
+
+.card {
+  border: none; /* Elimina el borde */
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3); /* Agrega una sombra */
+}
+.centros-acreditado {
+  background-color: #0098cb;
+  max-width: 1280px;
+  /* max-width: auto; */
+}
+.img-title {
+  margin: auto;
+  width: 400px;
+}
+#espacio2 {
+  width: 800px !important;
+  background-color: #fff;
+}
+
+@media (max-width: 780px) {
+  .container-img {
+    overflow: hidden;
+  }
+  .container-img img {
+    clip-path: inset(150px 0px 0px 0px);
+  }
+  .img-ambos {
+    padding: 0;
+    width: 650px;
+    justify-content: center;
+  }
+  .container {
+    padding-left: 0 !important;
+  }
+  .img-ambos img {
+    /*  margin-left: -15px; */
+    margin-top: -50px;
+  }
+  /* #informacion {
+    scale: calc(1.4);
+  } */
+  .centros-acreditado {
+    background-color: #0070b7;
+    margin-top: -50px;
+  }
+  #espacio1 {
+    max-width: 600px !important;
+  }
+  #espacio2.es-content-body {
+    width: 500px;
+  }
+  #espacio2.esd-stripe {
+    width: 500px !important;
+  }
+  #informacion {
+    width: 500px;
+  }
+  .img-title {
+    /* margin: auto; */
+    width: 280px;
+  }
+}
+@media (max-width: 500px) {
+  .img-ambos {
+    width: 450px;
+    justify-content: center;
+  }
+  #espacio1 {
+    max-width: 388px !important;
+  }
+
+  #informacion {
+    margin-top: 0px;
+  }
+  .espacio10 {
+    margin-bottom: 20px;
+  }
+  .img-title {
+    /* margin: auto; */
+    max-width: 280px;
+  }
+  /*  #informacion {
+    margin: auto;
+  } */
+}
+@media (min-width: 1280px) {
+  #espacio1 {
+    width: 100%;
+    max-width: 800px !important;
+    background-color: #fff;
+  }
+  #espacio2 {
+    max-width: 1000px !important;
+  }
+}

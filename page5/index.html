@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/estilos.css" rel="stylesheet" />
+    <style type="text/css">
+      .sede {
+        display: none;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>UP</title>
+  </head>
+  <body>
+    <div class="fondoprincipal">
+      <div class="container espacio7">
+        <div class="row">
+          <div class="imagen-pareja col-md-7">
+            <div class="container-images">
+              <div class="row">
+                <div class="col-md-12 img-ambos">
+                  <img style="bottom: 0px" src="images/page5.png" />
+                  <!-- <img class="img-pareja" src="images/2.png" /> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 espacio10 espaciom container-form">
+            <div class="row">
+              <div class="col-md-12">
+                <div align="center">
+                  <img src="images/logo.png" class="img-fluid logo" />
+                </div>
+              </div>
+            </div>
+
+            <form>
+              <div class="row espaciopc">
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    name="nombre"
+                    class="cajas"
+                    placeholder="Nombre"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 espaciomov">
+                  <input
+                    type="text"
+                    name="apellidos"
+                    class="cajas"
+                    placeholder="Apellidos"
+                  />
+                </div>
+              </div>
+              <div class="row espaciopc">
+                <div class="col-md-6 espaciomov">
+                  <input
+                    type="text"
+                    name="dni"
+                    class="cajas"
+                    placeholder="DNI"
+                  />
+                </div>
+                <div class="col-md-6 espaciomov">
+                  <input
+                    type="text"
+                    name="telefono"
+                    class="cajas"
+                    placeholder="Teléfono"
+                  />
+                </div>
+              </div>
+              <div class="row espaciopc">
+                <div class="col-md-6 espaciomov">
+                  <input
+                    type="text"
+                    name="correo"
+                    class="cajas"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <div class="col-md-6 espaciomov">
+                  <select name="procedencia" class="cajas" required>
+                    <option value=" " class="modalidad">
+                      Lugar de procedencia
+                    </option>
+                    <option value="Lima" class="modalidad">Lima</option>
+                    <option value="Callao" class="modalidad">Callao</option>
+                    <option value="Huancayo" class="modalidad">Huancayo</option>
+                    <option value="Cusco" class="modalidad">Cusco</option>
+                    <option value="Piura" class="modalidad">Piura</option>
+                    <option value="Trujillo" class="modalidad">Trujillo</option>
+                    <option value="Arequipa" class="modalidad">Arequipa</option>
+                    <option value="La Libertad" class="modalidad">
+                      La Libertad
+                    </option>
+                    <option value="Ancash" class="modalidad">Ancash</option>
+                    <option value="Otros" class="modalidad">Otros</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row espaciopc">
+                <div class="col-md-6 espaciomov hidden">
+                  <select
+                    class="cajas"
+                    style="font-size: 11pt; text-align-last: center"
+                    placeholder="Sede"
+                    id="slcExamenes"
+                    name="slcExamenes"
+                  >
+                    <option value="" class="modalidad">
+                      Programa de Interés
+                    </option>
+                    <option value="" class="modalidad">Academic Writing</option>
+                    <option value="" class="modalidad">
+                      Advanced English Program
+                    </option>
+                    <option value="" class="modalidad">Alemán</option>
+                    <option value="" class="modalidad">
+                      An Effective Virtual Presentation
+                    </option>
+                    <option value="" class="modalidad">
+                      CAE - Cursos de Preparación
+                    </option>
+                    <option value="" class="modalidad">
+                      CELPE - BRAS - Curso de Preparación
+                    </option>
+                    <option value="" class="modalidad">Chino mandarín</option>
+                    <option value="" class="modalidad">
+                      Communication Level
+                    </option>
+                    <option value="" class="modalidad">
+                      CPE - Curso de Preparación
+                    </option>
+                    <option value="" class="modalidad">
+                      Cursos de Formación Docente
+                    </option>
+                    <option value="" class="modalidad">
+                      DELTA Module 1 - Curso de Preparación
+                    </option>
+                    <option value="" class="modalidad">English at Work</option>
+                    <option value="" class="modalidad">
+                      English for Business
+                    </option>
+                    <option value="" class="modalidad">
+                      English for Juniors
+                    </option>
+                    <option value="" class="modalidad">English for Tots</option>
+                    <option value="" class="modalidad">
+                      English for Young Adults
+                    </option>
+                    <option value="" class="modalidad">
+                      Español para Extranjeros
+                    </option>
+                    <option value="" class="modalidad">
+                      FCE - Cursos de Preparación
+                    </option>
+                    <option value="" class="modalidad">Francés</option>
+                    <option value="" class="modalidad">
+                      GMAT - Cursos de Preparación
+                    </option>
+                    <option value="" class="modalidad">Grammar</option>
+                    <option value="" class="modalidad">
+                      GRE - Cursos de Preparación
+                    </option>
+                    <option value="" class="modalidad">
+                      IELTS - Cursos de Preparación
+                    </option>
+                    <option value="" class="modalidad">
+                      Inglés Fácil desde Cero
+                    </option>
+                    <option value="" class="modalidad">
+                      Inglés para Emprendedores
+                    </option>
+                    <option value="" class="modalidad">
+                      Inglés para la Reinserción Laboral
+                    </option>
+                    <option value="" class="modalidad">
+                      Interpreting: First Steps
+                    </option>
+                    <option value="" class="modalidad">Italiano</option>
+                    <option value="" class="modalidad">
+                      Lengua de Señas Peruana
+                    </option>
+                    <option value="" class="modalidad">
+                      Listening and Speaking
+                    </option>
+                    <option value="" class="modalidad">Portugués</option>
+                    <option value="" class="modalidad">Quechua</option>
+                    <option value="" class="modalidad">
+                      Quick Strategies for Writing
+                    </option>
+                    <option value="" class="modalidad">
+                      Seminario Developing Business Skills
+                    </option>
+                    <option value="" class="modalidad">Smart Talk</option>
+                    <option value="" class="modalidad">
+                      TKT - Cursos de Preparación
+                    </option>
+                    <option value="" class="modalidad">
+                      TOEFL - Curso de Preparación
+                    </option>
+                    <option value="" class="modalidad">
+                      Pronunciation Clinic
+                    </option>
+                  </select>
+                </div>
+                <div class="col-md-6 espaciomov">
+                  <select
+                    name="modalidad"
+                    id="modalidad"
+                    class="cajas"
+                    required
+                    onchange="toggle(this)"
+                  >
+                    <option value=" " class="modalidad">Modalidad</option>
+                    <option value="Presencial" class="modalidad">
+                      Presencial
+                    </option>
+                    <option value="Virtual" class="modalidad">Virtual</option>
+                  </select>
+                </div>
+                <div class="col-md-6 espaciomov">
+                  <div class="sede">
+                    <select name="sedes" id="sedes" class="cajas" required>
+                      <option value=" " class="modalidad">Sede</option>
+                      <option value="Miraflores" class="modalidad">
+                        Miraflores
+                      </option>
+                      <option value="San Isidro" class="modalidad">
+                        San Isidro
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row espaciopc">
+                <div class="col-md-12">
+                  <div style="padding: 20px">
+                    <label class="contain"
+                      >*Autorizo a la Universidad del Pacífico a utilizar mis
+                      datos personales para los fines mencionados
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+
+                    <label class="contain"
+                      >*Autorizo a la Universidad del Pacífico a utilizar mis
+                      datos por terceros
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <div align="center">
+                      <a
+                        href=""
+                        data-toggle="modal"
+                        data-target="#exampleModalCenter"
+                        class="referencia"
+                        >*Términos y condiciones</a
+                      >
+                    </div>
+                    <div align="center" style="padding-top: 1em">
+                      <input type="submit" value="ENVIAR" class="boton" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Main -->
+
+    <!-- Centro Acreditado -->
+
+    <div class="es-wrapper-color centros-acreditado">
+      <table
+        id="espacio1"
+        class="es-content"
+        cellspacing="0"
+        cellpadding="0"
+        align="center"
+        style="background-color: #f5f5f5"
+      >
+        <tbody>
+          <tr>
+            <td class="esd-stripe" align="center">
+              <table
+                class="es-content-body"
+                cellspacing="0"
+                cellpadding="0"
+                bgcolor="#f5f5f5"
+                align="center"
+              >
+                <tbody>
+                  <tr>
+                    <td
+                      class="esd-structure"
+                      esd-general-paddings-checked="false"
+                      align="left"
+                    >
+                      <table width="100%" cellspacing="0" cellpadding="0">
+                        <tbody>
+                          <tr>
+                            <td
+                              class="esd-container-frame"
+                              valign="top"
+                              align="center"
+                            >
+                              <table
+                                width="100%"
+                                cellspacing="0"
+                                cellpadding="0"
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td class="esd-block-image" align="center">
+                                      <a
+                                        href="#"
+                                        id="container-img"
+                                        style="pointer-events: none"
+                                        onclick="return false;"
+                                      >
+                                        <img
+                                          id="informacion"
+                                          class="adapt-img"
+                                          src="images/informacion1.png"
+                                          width="800"
+                                        />
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table
+        id="espacio1"
+        class="es-content"
+        cellspacing="0"
+        cellpadding="0"
+        align="center"
+        style="background-color: #f5f5f5"
+      >
+        <tbody>
+          <tr>
+            <td class="esd-stripe" align="center">
+              <table
+                class="es-content-body"
+                cellspacing="0"
+                cellpadding="0"
+                bgcolor="#f5f5f5"
+                align="center"
+              >
+                <tbody>
+                  <tr>
+                    <td
+                      class="esd-structure"
+                      esd-general-paddings-checked="false"
+                      align="left"
+                    >
+                      <table width="100%" cellspacing="0" cellpadding="0">
+                        <tbody>
+                          <tr>
+                            <td
+                              class="esd-container-frame"
+                              valign="top"
+                              align="center"
+                            >
+                              <table
+                                width="100%"
+                                cellspacing="0"
+                                cellpadding="0"
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td class="esd-block-image" align="center">
+                                      <a
+                                        href="#"
+                                        id="container-img"
+                                        style="pointer-events: none"
+                                        onclick="return false;"
+                                      >
+                                        <img
+                                          id="informacion"
+                                          class="adapt-img"
+                                          src="images/informacion3.png"
+                                          width="800"
+                                        />
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 col-12">
+            <a
+              href="https://www.facebook.com/CIDUP/?utm_source=fb&utm_medium=mailing&utm_campaign=agenciaBO&utm_id=cidup-2022"
+              ><i class="fa fa-facebook social"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/cidup_/?utm_source=ig&utm_medium=mailing&utm_campaign=agenciaBO&utm_id=cidup-2022"
+              ><i class="fa fa-instagram social"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/showcase/centro-de-idiomas-de-la-universidad-del-pac%C3%ADfico/?utm_source=linkedin&utm_medium=mailing&utm_campaign=Bo-cidup-2022&utm_id=cidup-2022"
+              ><i class="fa fa-linkedin social"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/channel/UCQkwdfWMrUlrIhNpFuzSsRw?utm_source=yt&utm_medium=mailing&utm_campaign=agenciaBO&utm_id=cidup-2022"
+            >
+              <!-- <i-- class="fa fa-youtube social"></i-->
+              <img
+                class="social"
+                width="25px"
+                src="images/youtube.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="col-md-3 col-12">
+            <h5>idiomas.up.edu.pe</h5>
+          </div>
+          <div class="col-md-3 col-12">
+            <h5>idiomas.informes@up.edu.pe</h5>
+          </div>
+          <div class="col-md-4 col-12">
+            <h5 class="der">teléfono: 219-0151 / 219-0152 opción 1</h5>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
