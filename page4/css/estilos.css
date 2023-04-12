@@ -63,6 +63,11 @@ body {
 #informacion {
   height: auto;
   max-width: 100%;
+  /*NUEVO*/
+  margin-top: 50px;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 @media (max-width: 768px) {
@@ -112,6 +117,15 @@ body {
   }
   #espacio2 {
     max-width: 100%;
+  }
+  #informacion {
+    max-width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    /*nuevo*/
+    display: flex;
+    justify-content: center;
+    /* scale: calc(1.1); */
   }
   container-form {
     width: 515px;
@@ -747,12 +761,21 @@ footer .social {
     justify-content: center;
   }
   #espacio1 {
-    max-width: 388px !important;
+    max-width: 100% !important;
+  }
+  .info2 {
+    /*nuevo*/
+    margin-top: 0px !important;
+  }
+  .info-cuadro {
+    /*NUEVO*/
+    margin-left: 10px !important;
+  }
+  #informacion {
+    /* nuevo */
+    margin-top: 50px;
   }
 
-  #informacion {
-    margin-top: 0px;
-  }
   .espacio10 {
     margin-bottom: 20px;
   }
@@ -770,4 +793,63 @@ footer .social {
   #espacio2 {
     max-width: 1000px !important;
   }
+}
+/*-----------------------------*/
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  max-width: 280px;
+  width: 100%;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  position: relative;
+  border: none;
+  box-shadow: 4px 5px 6px 0px rgba(105, 105, 105, 0.2);
+  margin-bottom: 50px;
+}
+
+.box > h4 {
+  font-size: 1.1rem !important;
+  color: #333;
+  font-family: "NeoSansStd-Medium";
+}
+
+.box .circulo-img {
+  position: absolute;
+  top: -20%;
+  left: -8%;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  /* margin: 10px; */
+  background-color: RED;
+  display: flex;
+  align-content: center;
+}
+.circulo-img > img {
+  max-width: 65%;
+  max-height: 65%;
+  margin: auto;
+}
+
+.box h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+/*TITLE*/
+.title-curse {
+  font-size: 25px;
+  font-family: NeoSansStd-Medium;
+  background-color: greenyellow;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.info2 {
+  margin-top: 0px !important;
 }
