@@ -999,3 +999,23 @@ div#frecuencias {
     font-size: 14px;
   }
 }
+@media (min-width: 1000px) {
+  #espacio2 {
+    width: 700px;
+  }
+}
+@media (max-width: 500px) {
+  #espacio2 {
+    width: 300px;
+  }
+}
+@media (max-width: 768px) {
+  #espacio2 {
+    width: 500px;
+  }
+}
+@media (max-width: 500px) {
+  #espacio2 {
+    width: 300px;
+  }
+}
