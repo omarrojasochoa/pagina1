@@ -19,6 +19,10 @@
   font-family: "NeoSansStd-Medium";
   src: url("../fuentes/NeoSansStd-Medium.otf");
 }
+@font-face {
+  font-family: "LibelSuitRg";
+  src: url("../fuentes/libel-suit-rg.ttf");
+}
 
 body {
   max-width: 1280px;
@@ -776,9 +780,9 @@ footer .social {
     width: 450px;
     justify-content: center;
   }
-  #espacio1 {
+  /* #espacio1 {
     max-width: 388px !important;
-  }
+  } */
 
   #informacion {
     /*  margin-top: 0px; */
@@ -803,7 +807,7 @@ footer .social {
   }
   .title-curse {
     /*nuevo*/
-    font-size: 15px !important;
+    font-size: 20px !important;
   }
   /*  #informacion {
     margin: auto;
@@ -853,13 +857,13 @@ footer .social {
   height: 45px;
   border-radius: 50%;
   /* margin: 10px; */
-  background-color: RED;
+  background-color: #e3e2e8;
   display: flex;
   align-content: center;
 }
 .circulo-img > img {
-  max-width: 65%;
-  max-height: 65%;
+  max-width: 85%;
+  max-height: 85%;
   margin: auto;
 }
 
@@ -869,12 +873,17 @@ footer .social {
 }
 /*TITLE*/
 .title-curse {
-  font-size: 25px;
-  font-family: NeoSansStd-Medium;
-  background-color: greenyellow;
+  font-size: 30px;
+  /* font-family: NeoSansStd-Medium; */
+  /*  background-color: greenyellow; */
+  font-family: LibelSuitRg;
+  background-color: #95f24c;
   padding-left: 15px;
   padding-right: 15px;
+  color: #0098cb !important;
 }
 .info2 {
   margin-top: 0px !important;
 }
+
+/*CHECK HASTA AQUI - FALTA FRECUENCIAS - GRID*/

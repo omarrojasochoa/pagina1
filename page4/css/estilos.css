@@ -828,13 +828,13 @@ footer .social {
   height: 45px;
   border-radius: 50%;
   /* margin: 10px; */
-  background-color: RED;
+  background-color: #e3e2e8;
   display: flex;
   align-content: center;
 }
 .circulo-img > img {
-  max-width: 65%;
-  max-height: 65%;
+  max-width: 85%;
+  max-height: 85%;
   margin: auto;
 }
 
