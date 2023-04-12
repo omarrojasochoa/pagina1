@@ -793,6 +793,10 @@ footer .social {
   .espacio10 {
     margin-bottom: 20px;
   }
+  .info-cuadro {
+    /*NUEVO*/
+    margin-left: 10px !important;
+  }
   .img-title {
     /* margin: auto; */
     max-width: 280px;
