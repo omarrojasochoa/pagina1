@@ -107,7 +107,7 @@ body {
   #espacio2 {
     /*cambio aquis*/
     width: 100%;
-    max-width: 500px;
+    max-width: 500px !important;
   }
   #informacion {
     max-width: 100%;
@@ -737,7 +737,8 @@ footer .social {
 }
 #espacio2 {
   /* width: 800px !important; */
-  width: 800px;
+  /* width: 800px; */
+  /* padding-left: 150px; */
   background-color: #fff;
 }
 
@@ -768,6 +769,7 @@ footer .social {
     margin-top: -50px;
   }
   #espacio1 {
+    width: 100%;
     max-width: 600px !important;
   }
   #espacio2.es-content-body {
@@ -829,7 +831,9 @@ footer .social {
     background-color: #fff;
   }
   #espacio2 {
-    max-width: 1000px !important;
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
   }
 }
 /*-----------------------------*/
