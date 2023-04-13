@@ -739,6 +739,10 @@ footer .social {
   /* width: 800px !important; */
   /* width: 800px; */
   /* padding-left: 150px; */
+
+  width: 100% !important;
+  max-width: 800px;
+
   background-color: #fff;
 }
 
@@ -771,6 +775,10 @@ footer .social {
   #espacio1 {
     width: 100%;
     max-width: 600px !important;
+  }
+  #espacio2 {
+    width: 100% !important;
+    max-width: 600px;
   }
   #espacio2.es-content-body {
     width: 500px;

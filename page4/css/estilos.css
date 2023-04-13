@@ -731,6 +731,8 @@ footer .social {
 #espacio2 {
   /*  width: 800px !important; */
   background-color: #fff;
+  width: 100% !important;
+  max-width: 800px;
 }
 
 @media (max-width: 780px) {
