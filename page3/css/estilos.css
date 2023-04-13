@@ -977,7 +977,7 @@ div#frecuencias {
     max-width: -webkit-fill-available;
   } */
   #frecuencias > .row {
-    max-width: 340px;
+    max-width: 335px;
     font-size: 12px;
     height: 22px;
   }

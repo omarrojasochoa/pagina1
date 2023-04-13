@@ -160,7 +160,7 @@ body {
   #espacio2 {
     /*cambio aqui*/
     width: 100%;
-    max-width: 350px;
+    max-width: 330px;
   }
   /* cambio*/
   .centros-acreditado {
@@ -791,9 +791,9 @@ footer .social {
     width: 450px;
     justify-content: center;
   }
-  /* #espacio1 {
-    max-width: 388px !important;
-  } */
+  #espacio1 {
+    max-width: 360px !important;
+  }
 
   #informacion {
     /*  margin-top: 0px; */
@@ -992,7 +992,7 @@ div#frecuencias {
     max-width: -webkit-fill-available;
   } */
   #frecuencias > .row {
-    max-width: 350px;
+    max-width: 335px;
     font-size: 12px;
     height: 22px;
   }
