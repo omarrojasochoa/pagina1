@@ -19,7 +19,10 @@
   font-family: "NeoSansStd-Medium";
   src: url("../fuentes/NeoSansStd-Medium.otf");
 }
-
+@font-face {
+  font-family: "LibelSuitRg";
+  src: url("../fuentes/libel-suit-rg.ttf");
+}
 body {
   max-width: 1280px;
   text-align: center;
@@ -97,7 +100,8 @@ body {
     justify-content: center;
   }
   #espacio2 {
-    max-width: 20%;
+    width: 100%;
+    max-width: 500px !important;
   }
   #informacion {
     max-width: 100%;
@@ -107,6 +111,9 @@ body {
     /*nuevo*/
     display: flex;
     justify-content: center;
+  }
+  .title-curse {
+    font-size: 20px !important;
   }
 }
 @media (max-width: 1200px) {
@@ -119,6 +126,15 @@ body {
   }
   #espacio2 {
     max-width: 100%;
+  }
+  #informacion {
+    max-width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    /*nuevo*/
+    display: flex;
+    justify-content: center;
+    /* scale: calc(1.1); */
   }
   container-form {
     width: 515px;
@@ -137,6 +153,10 @@ body {
   }
   #espacio2 {
     max-width: 100%;
+    max-width: 330px;
+  }
+  .centros-acreditado {
+    background-color: #f5f5f5 !important;
   }
   container-form {
     width: 515px;
@@ -708,7 +728,7 @@ footer .social {
   width: 400px;
 }
 #espacio2 {
-  width: 800px !important;
+  /* width: 800px !important; */
   background-color: #fff;
 }
 
@@ -736,8 +756,9 @@ footer .social {
     margin-top: -50px;
   }
   #espacio1 {
-    /*  padding-bottom: 10px; */
+    width: 100%;
     max-width: 600px !important;
+    padding-bottom: 10px;
   }
   #espacio2.es-content-body {
     width: 500px;
@@ -759,7 +780,7 @@ footer .social {
     justify-content: center;
   }
   #espacio1 {
-    max-width: 100% !important;
+    max-width: 360px !important;
   }
 
   #informacion {
@@ -789,7 +810,9 @@ footer .social {
     background-color: #fff;
   }
   #espacio2 {
-    max-width: 1000px !important;
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
   }
 }
 /*-----------------------------*/
@@ -844,10 +867,128 @@ footer .social {
 .title-curse {
   font-size: 25px;
   font-family: NeoSansStd-Medium;
-  background-color: greenyellow;
+  /* background-color: greenyellow; */
+  background-color: #ffde00;
   padding-left: 15px;
   padding-right: 15px;
 }
 .info2 {
   margin-top: 0px !important;
+}
+/*CHECK HASTA AQUI - FALTA FRECUENCIAS - GRID*/
+.bg-pri {
+  color: black !important;
+  background-color: #eeeeef;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.bg-sec {
+  color: black !important;
+  background-color: #e2e2e2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+div#frecuencias {
+  font-family: "LibelSuitRg";
+  font-size: 15px;
+  display: grid;
+  align-items: center;
+}
+#frecuencias {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+#frecuencias > .row {
+  font-size: 23px;
+  height: 40px;
+  width: 600px;
+  align-items: center;
+  justify-content: center;
+}
+#frecuencias > .row.titulo {
+  font-size: 22 px;
+  color: #1e62a6;
+}
+#frecuencias > .row.titulo-niveles {
+  font-size: 22 px;
+  color: #5a5a58;
+}
+
+.title-span > span {
+  font-size: 22 px;
+  color: #091c49 !important;
+}
+
+.duracion {
+  display: flex;
+  justify-content: center;
+}
+.row > .modalidad {
+  font-size: 26px;
+  /* color: #59c1da; */
+  color: #009b3a;
+}
+.row > .title-frecuencias {
+  font-family: "Gilroy-Extrabold" !important;
+  padding-left: 50px;
+  padding-right: 30px;
+  width: 300px;
+  color: #fff !important;
+  clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+}
+
+.row > .nivel {
+  color: #fff !important;
+  background: url(../images/bg/1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.row > .cronologia {
+  color: #fff !important;
+  background: url(../images/bg/3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.cronologia > span {
+  left: 500px;
+}
+.cronologia-pie {
+  font-size: 17px;
+  color: #162b46;
+}
+@media (max-width: 768px) {
+  /* #espacio2 {
+    max-width: -webkit-fill-available;
+  } */
+  #frecuencias > .row {
+    max-width: 335px;
+    font-size: 12px;
+    height: 22px;
+  }
+  #frecuencias > .row.titulo {
+    font-size: 12px;
+  }
+  #frecuencias > .row.titulo-niveles {
+    font-size: 16px;
+  }
+  .row > .modalidad {
+    font-size: 13px;
+    /* color: #59c1da; */
+  }
+  .row > .title-frecuencias {
+    max-width: 175px;
+    padding-left: 25px;
+    font-size: 20px !important;
+  }
+  .cronologia-pie {
+    font-size: 14px;
+  }
 }

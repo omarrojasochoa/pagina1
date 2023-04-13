@@ -983,7 +983,7 @@ div#frecuencias {
   }
   .row > .modalidad {
     font-size: 13px;
-    color: #59c1da;
+    /* color: #59c1da; */
   }
   .row > .title-frecuencias {
     max-width: 175px;
