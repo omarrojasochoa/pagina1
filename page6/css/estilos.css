@@ -973,6 +973,14 @@ div#frecuencias {
   font-size: 17px;
   color: #162b46;
 }
+.row > .modalidad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#span {
+  font-size: 12px;
+}
 @media (max-width: 768px) {
   /* #espacio2 {
     max-width: -webkit-fill-available;
@@ -999,5 +1007,20 @@ div#frecuencias {
   }
   .cronologia-pie {
     font-size: 14px;
+  }
+  #span {
+    font-size: 8px;
+  }
+  #frecuencias > .row {
+    padding: 0;
+    height: auto;
+  }
+  .row > .modalidad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #horario-hidden {
+    visibility: none;
   }
 }
