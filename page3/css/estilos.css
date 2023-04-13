@@ -783,7 +783,7 @@ footer .social {
     max-width: 388px !important;
   }
   #espacio2 {
-    max-width: 360px !important;
+    max-width: 388px !important;
   }
   #informacion {
     /*  margin-top: 0px; */
@@ -993,7 +993,7 @@ div#frecuencias {
     font-size: 16px;
   }
   .row > .modalidad {
-    font-size: 13px;
+    font-size: 13px !important;
     /* color: #59c1da; */
   }
   .row > .title-frecuencias {
@@ -1003,5 +1003,8 @@ div#frecuencias {
   }
   .cronologia-pie {
     font-size: 14px;
+  }
+  .row > * {
+    font-size: 11px;
   }
 }
