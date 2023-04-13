@@ -105,7 +105,9 @@ body {
     justify-content: center;
   }
   #espacio2 {
-    max-width: 100%;
+    /*cambio aquis*/
+    width: 100%;
+    max-width: 500px;
   }
   #informacion {
     max-width: 100%;
@@ -156,7 +158,13 @@ body {
     max-width: 100%;
   }
   #espacio2 {
-    max-width: 100%;
+    /*cambio aqui*/
+    width: 100%;
+    max-width: 350px;
+  }
+  /* cambio*/
+  .centros-acreditado {
+    background-color: #f5f5f5 !important;
   }
   container-form {
     width: 515px;
@@ -731,121 +739,6 @@ footer .social {
   /* width: 800px !important; */
   width: 800px;
   background-color: #fff;
-} /*CHECK HASTA AQUI - FALTA FRECUENCIAS - GRID*/
-.bg-pri {
-  color: black !important;
-  background-color: #eeeeef;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.bg-sec {
-  color: black !important;
-  background-color: #e2e2e2;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-div#frecuencias {
-  font-family: "LibelSuitRg";
-  font-size: 15px;
-  display: grid;
-  align-items: center;
-}
-#frecuencias {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 5px;
-  max-width: 800px;
-  margin-bottom: 50px;
-}
-#frecuencias > .row {
-  font-size: 23px;
-  height: 40px;
-  width: 600px;
-  align-items: center;
-  justify-content: center;
-}
-#frecuencias > .row.titulo {
-  font-size: 22 px;
-  color: #1e62a6;
-}
-#frecuencias > .row.titulo-niveles {
-  font-size: 22 px;
-  color: #162b46;
-}
-
-.title-span > span {
-  font-size: 22 px;
-  color: #59c1da !important;
-}
-
-.duracion {
-  display: flex;
-  justify-content: center;
-}
-.row > .modalidad {
-  font-size: 26px;
-  color: #59c1da;
-}
-.row > .title-frecuencias {
-  font-family: "Gilroy-Extrabold" !important;
-  padding-left: 50px;
-  padding-right: 30px;
-  width: 300px;
-  color: black !important;
-  clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
-}
-
-.row > .nivel {
-  color: #fff !important;
-  background: url(../images/bg/1.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.row > .cronologia {
-  color: #fff !important;
-  background: url(../images/bg/3.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.cronologia > span {
-  left: 500px;
-}
-.cronologia-pie {
-  font-size: 17px;
-  color: #162b46;
-}
-@media (max-width: 768px) {
-  #espacio2 {
-    max-width: -webkit-fill-available;
-  }
-  #frecuencias > .row {
-    max-width: 350px;
-    font-size: 12px;
-    height: 22px;
-  }
-  #frecuencias > .row.titulo {
-    font-size: 12px;
-  }
-  #frecuencias > .row.titulo-niveles {
-    font-size: 16px;
-  }
-  .row > .modalidad {
-    font-size: 13px;
-    color: #59c1da;
-  }
-  .row > .title-frecuencias {
-    max-width: 175px;
-    padding-left: 25px;
-    font-size: 20px !important;
-  }
-  .cronologia-pie {
-    font-size: 14px;
-  }
 }
 
 @media (max-width: 780px) {
@@ -1003,7 +896,7 @@ div#frecuencias {
 }
 
 /*CHECK HASTA AQUI - FALTA FRECUENCIAS - GRID*/
-/* .bg-pri {
+.bg-pri {
   color: black !important;
   background-color: #eeeeef;
   display: flex;
@@ -1091,9 +984,9 @@ div#frecuencias {
   color: #162b46;
 }
 @media (max-width: 768px) {
-  #espacio2 {
+  /* #espacio2 {
     max-width: -webkit-fill-available;
-  }
+  } */
   #frecuencias > .row {
     max-width: 350px;
     font-size: 12px;
@@ -1118,4 +1011,3 @@ div#frecuencias {
     font-size: 14px;
   }
 }
- */
